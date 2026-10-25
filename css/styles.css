@@ -144,6 +144,35 @@ nav ul a:hover {
     font-weight: bold;
 }
 
+/* Project filter buttons */
+.projectFilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filterButton {
+    padding: 10px 18px;
+    border: 1px solid #2563eb;
+    border-radius: 15px;
+    background-color: white;
+    color: #2563eb;
+    font: inherit;
+    cursor: pointer;
+}
+
+.filterButton:hover,
+.filterButton[aria-pressed="true"] {
+    background-color: #2563eb;
+    color: white;
+}
+
+.filterButton:focus-visible {
+    outline: 3px solid #0f172a;
+    outline-offset: 3px;
+}
+
 /* Project grid and cards */
 .projectsGrid {
     display: grid;
