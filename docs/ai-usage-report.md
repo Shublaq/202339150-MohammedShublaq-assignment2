@@ -30,3 +30,5 @@ I did not use AI suggestions without reviewing them. I asked questions to unders
 | A05 | ChatGPT 6.1 Sol | 2026-10-25 | Suggest JavaScript for form validation. | script.js | added JavaScript code to validate form info into the script.js file. confirmed it functions well on the browser. |
 | A06 | ChatGPT 6.1 Sol | 2026-10-25 | Suggest CSS for form validation styling. | styles.css | added CSS styling to the form validation messages into the styles.css file. confirmed the design appears on the browser. |
 | A07 | ChatGPT 6.1 Sol | 2026-10-25 | Suggest CSS for smooth animations. | styles.css | added CSS smooth transitions between filtering buttons into the styles.css file. confirmed the behavior  on the browser. |
+| A08 | ChatGPT 6.1 Sol | 2026-10-25 | Suggest CSS styling for the overall design. | styles.css | added CSS glow effect and auto sizing into the styles.css file. confirmed the design on the browser. |
+| A09 | ChatGPT 6.1 Sol | 2026-10-25 | Assistance with changing project images. | index.html, styles.css | added the actual pictures for the project cards into the index.html file and styles.css file. confirmed images on the browser. |
