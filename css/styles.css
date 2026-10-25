@@ -160,6 +160,7 @@ nav ul a:hover {
     color: #2563eb;
     font: inherit;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .filterButton:hover,
