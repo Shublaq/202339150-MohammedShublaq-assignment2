@@ -249,6 +249,20 @@ form {
     resize: vertical;
 }
 
+/* Contact form feedback */
+#formStatus {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+#formStatus[data-state="error"] {
+    color: #b91c1c;
+}
+
+#formStatus[data-state="success"] {
+    color: #166534;
+}
+
 /* Footer */
 footer {
     background-color: #0f172a;

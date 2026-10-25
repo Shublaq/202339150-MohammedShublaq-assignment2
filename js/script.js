@@ -37,3 +37,42 @@ filterButtons.forEach(function (button) {
         });
     });
 });
+
+
+// Select the form, its fields, and the feedback paragraph.
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+
+// Let our submit handler control when browser validation runs.
+contactForm.noValidate = true;
+
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Remove spaces from the beginning and end of each entry.
+    nameInput.value = nameInput.value.trim();
+    emailInput.value = emailInput.value.trim();
+    messageInput.value = messageInput.value.trim();
+
+    if (!contactForm.checkValidity()) {
+        formStatus.textContent =
+            "Please complete all required fields and enter a valid email address.";
+        formStatus.dataset.state = "error";
+
+        contactForm.reportValidity();
+        return;
+    }
+
+    formStatus.textContent =
+        "Your entries are valid. This demo does not send messages.";
+    formStatus.dataset.state = "success";
+});
+
+// Clear outdated feedback when the visitor edits a field.
+contactForm.addEventListener("input", function () {
+    formStatus.textContent = "";
+    formStatus.dataset.state = "";
+});
